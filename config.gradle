@@ -1,0 +1,8 @@
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = "26.0.0"
+    minSdkVersion = 18
+    targetSdkVersion = compileSdkVersion
+    versionCode = 1
+    versionName = "1.0.0"
+}

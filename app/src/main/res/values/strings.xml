@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DiaryNew</string>
+    <string name="str_diary">日记</string>
+    <string name="str_divide">分类</string>
+    <string name="Str_Setting">设置</string>
+    <string name="Str_motto">记录生活，享受它的美</string>
+    <string name="str_author">\n\n
+        Android1.0.0: leoYouthDream\n\n
+        反馈意见: 1768031241@qq.com\n\n
+    </string>
+    <string name="str_hintTitle">请您输入日记标题</string>
+    <string name="str_hintContent">日记内容</string>
+    <string name="str_recall">微笑回想起你的生活</string>
+    <string name="str_author_url">http://blog.csdn.net/chenqianleo \n\n
+        http://www.ioqian.top</string>
+</resources>

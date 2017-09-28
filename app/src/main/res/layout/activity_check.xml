@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.leo.diarynew.activity.CheckActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_check_time"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:text="记录时间，2017年01月19日"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_check_tag"
+            android:text="心情"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_check_title"
+        android:layout_height="40dp"
+        android:layout_width="match_parent" />
+
+
+    <com.example.leo.diarynew.ui.LineEditText
+        android:id="@+id/let_check"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/shape_add_diary_title"
+        android:enabled="true"
+        android:gravity="top"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="10"
+        android:minLines="8"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>

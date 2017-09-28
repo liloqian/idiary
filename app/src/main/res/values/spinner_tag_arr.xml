@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinarr">
+        <item>随笔</item>
+        <item>心情</item>
+        <item>账本</item>
+        <item>学习</item>
+        <item>吐槽</item>
+    </string-array>
+</resources>

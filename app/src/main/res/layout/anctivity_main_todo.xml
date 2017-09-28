@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <ImageView
+            android:src="@drawable/main_bg"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_setting_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <View
+        android:background="#f0f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+    </View>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <CheckedTextView
+            android:drawableStart="@drawable/ic_work_grey600_24dp"
+            android:id="@+id/ctv_password"
+            style="@style/AppWidget.NavigationItem"
+            android:text="日记密码"
+            />
+
+        <CheckedTextView
+            android:drawableStart="@drawable/ic_forum_grey600_24dp"
+            android:id="@+id/ctv_add_category"
+            style="@style/AppWidget.NavigationItem"
+            android:text="新增日记分类"
+            />
+
+        <CheckedTextView
+            android:drawableStart="@drawable/ic_setting_readme"
+            android:id="@+id/ctv_readme"
+            style="@style/AppWidget.NavigationItem"
+            android:text="使用说明"
+            />
+
+        <CheckedTextView
+            android:drawableStart="@drawable/update"
+            style="@style/AppWidget.NavigationItem"
+            android:id="@+id/ctv_update"
+            android:text="检测更新"
+            />
+
+        <CheckedTextView
+            android:drawableStart="@drawable/ic_setting_about"
+            android:id="@+id/ctv_about"
+            style="@style/AppWidget.NavigationItem"
+            android:text="关于我们"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

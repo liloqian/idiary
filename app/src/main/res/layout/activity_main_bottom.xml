@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bootom_bg"
+    android:padding="10dp"
+    android:layout_height="60dp">
+
+    <CheckedTextView
+        android:id="@+id/ctv_diary"
+        android:checked="true"
+        android:text="@string/str_diary"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/main_ic_face"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <CheckedTextView
+        android:id="@+id/ctv_divide"
+        android:text="@string/str_divide"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/main_ic_file"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <CheckedTextView
+        android:id="@+id/ctv_todo"
+        android:text="@string/Str_Setting"
+        android:textAlignment="center"
+        android:drawableTop="@drawable/main_ic_setting"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>
