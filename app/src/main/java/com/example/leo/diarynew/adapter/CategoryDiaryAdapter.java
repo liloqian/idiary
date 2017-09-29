@@ -19,6 +19,8 @@ import org.greenrobot.eventbus.EventBus;
 
 import java.util.List;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 /**
  * Created by leo on 2017/8/20.
  */
@@ -72,17 +74,20 @@ public class CategoryDiaryAdapter extends RecyclerView.Adapter<CategoryDiaryAdap
         holder.iv_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(context);
-                builder.setMessage("删除该条日记 :(")
-                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                new SweetAlertDialog(context,SweetAlertDialog.WARNING_TYPE)
+                        .setTitleText("删除")
+                        .setContentText("您确定要删除这条日记吗？")
+                        .setConfirmText("确定删除")
+                        .setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
                             @Override
-                            public void onClick(DialogInterface dialog, int which) {
+                            public void onClick(SweetAlertDialog sweetAlertDialog) {
                                 LitePalUtil.deleteDataByTitle(mData.get(position).getTitle());
                                 mData.remove(mData.get(position));
                                 notifyDataSetChanged();
+                                sweetAlertDialog.dismissWithAnimation();
                             }
                         })
-                        .setNegativeButton("取消" ,null)
+                        .setCancelText("取消删除")
                         .show();
             }
         });
