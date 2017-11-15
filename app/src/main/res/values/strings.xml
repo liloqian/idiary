@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DiaryNew</string>
+    <string name="app_name">idiary</string>
     <string name="str_diary">日记</string>
     <string name="str_divide">分类</string>
     <string name="Str_Setting">设置</string>

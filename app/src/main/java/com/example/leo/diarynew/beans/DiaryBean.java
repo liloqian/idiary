@@ -18,7 +18,6 @@ public class DiaryBean extends DataSupport implements Serializable{
     @Encrypt(algorithm = AES)
     private String content;
 
-
     public DiaryBean() {
     }
 
