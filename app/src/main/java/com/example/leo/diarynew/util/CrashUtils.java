@@ -36,6 +36,7 @@ public class CrashUtils implements Thread.UncaughtExceptionHandler{
     private CrashUtils(Context context){
         this.mContext = context;
     }
+
     /**
      * @param  context
      */
@@ -112,12 +113,13 @@ public class CrashUtils implements Thread.UncaughtExceptionHandler{
             }
         }).start();
         Log.e(TAG, "crash log dir :  " + fullPath );
+        //TODO deal with crash info
         if(mHandler != null){
             mHandler.uncaughtException(thread,throwable);
         }
     }
 
-    public String getCrashInfo() {
+    private String getCrashInfo() {
         return "\n************Crash Info Head ******************" +
                 "\n* Device Manufacturer: " + Build.MANUFACTURER +
                 "\n* Device Model: " + Build.MODEL +

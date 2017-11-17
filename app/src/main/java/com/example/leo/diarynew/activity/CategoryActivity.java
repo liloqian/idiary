@@ -59,7 +59,6 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
      * get data from db only current tag
      */
     private void getDiaryListDataTagFromdb(){
@@ -69,7 +68,6 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
      * init toolbar and set homeNavigation
      */
     private void initToolbar() {

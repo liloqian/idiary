@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Created by leo on 2017/8/18.
- * ViewPager 需要的adapter
+ * ViewPager adapter
  */
 
 public class MainViewPager extends PagerAdapter{

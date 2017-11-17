@@ -8,12 +8,13 @@ import java.util.List;
 
 /**
  * Created by leo on 2017/8/19.
+ * fun: diary tag init
  */
 
 public class TagSpinner {
 
     //diary category
-    public static final List<String> tagList = new ArrayList<>();
+    private static final List<String> tagList = new ArrayList<>();
 
     public static void init(){
         tagList.clear();

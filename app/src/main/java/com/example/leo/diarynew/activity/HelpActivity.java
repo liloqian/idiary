@@ -13,6 +13,10 @@ import com.example.leo.diarynew.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * a activity to show four image that help people to use this app
+ * */
+
 public class HelpActivity extends AppCompatActivity {
 
     @BindView(R.id.myToolBar)

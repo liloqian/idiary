@@ -114,7 +114,6 @@
                 app:fab_size="normal"
                 app:fab_icon = "@drawable/save_new"
                 />
-            add_diary_fab_back
             <cc.trity.floatingactionbutton.FloatingActionButton
                 android:id="@+id/add_diary_fab_back"
                 android:layout_width="40dp"
@@ -125,10 +124,6 @@
                 app:fab_colorNormal="#e41c1c"
                 app:fab_icon = "@drawable/back_new"
                 />
-
-            />
-
-
         </cc.trity.floatingactionbutton.FloatingActionsMenu>
 
     </RelativeLayout>

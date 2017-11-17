@@ -1,6 +1,5 @@
 package com.example.leo.diarynew.beans;
 
-import org.litepal.annotation.Encrypt;
 import org.litepal.crud.DataSupport;
 
 import java.io.Serializable;
@@ -15,7 +14,6 @@ public class DiaryBean extends DataSupport implements Serializable{
     private String title;
     private String tag;
 
-    @Encrypt(algorithm = AES)
     private String content;
 
     public DiaryBean() {

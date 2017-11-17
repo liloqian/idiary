@@ -14,6 +14,37 @@
             android:id="@+id/iv_setting_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <!--<TextView-->
+            <!--android:textSize="20sp"-->
+            <!--android:text="小小狮子，欢迎你"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="180dp"
+            android:layout_height="match_parent">
+            <com.example.leo.diarynew.ui.CircleImageView
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/circleImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/peolpe_icon" />
+            <Button
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="#00000000"
+                android:textAllCaps="false"
+                android:id="@+id/setting_btn_login"
+                android:text="请登录"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
     </FrameLayout>
 
     <View
@@ -41,27 +72,38 @@
             style="@style/AppWidget.NavigationItem"
             android:text="新增日记分类"
             />
-
+        <CheckedTextView
+            android:drawableStart="@drawable/data_update"
+            android:id="@+id/ctv_data_update"
+            style="@style/AppWidget.NavigationItem"
+            android:text="日记数据上传备份"
+            />
+        <CheckedTextView
+            android:drawableStart="@drawable/data_download"
+            android:id="@+id/ctv_data_download"
+            style="@style/AppWidget.NavigationItem"
+            android:text="日记数据同步"
+            />
         <CheckedTextView
             android:drawableStart="@drawable/ic_setting_readme"
             android:id="@+id/ctv_readme"
             style="@style/AppWidget.NavigationItem"
             android:text="使用说明"
             />
-
         <CheckedTextView
+            android:visibility="gone"
             android:drawableStart="@drawable/update"
             style="@style/AppWidget.NavigationItem"
             android:id="@+id/ctv_update"
             android:text="检测更新"
             />
-
         <CheckedTextView
             android:drawableStart="@drawable/ic_setting_about"
             android:id="@+id/ctv_about"
             style="@style/AppWidget.NavigationItem"
             android:text="关于我们"
             />
+
 
     </LinearLayout>
 

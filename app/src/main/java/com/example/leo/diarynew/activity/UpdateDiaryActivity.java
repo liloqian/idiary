@@ -103,7 +103,6 @@ public class UpdateDiaryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/27
      * init spinner and set current tag
      */
     private void initSpinner() {

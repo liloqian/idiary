@@ -21,6 +21,10 @@ import com.example.leo.diarynew.util.ToastUtils;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * a activity that password operation
+ */
+
 public class LockActivity extends AppCompatActivity {
 
     @BindView(R.id.myToolBar)
@@ -51,11 +55,9 @@ public class LockActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/28
      * 当存在密码  SP_HAVE_PASSWORDS  TRUE
      * 不存在密码  SP_HAVE_PASSWORDS  NULL
      */
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,9 +72,7 @@ public class LockActivity extends AppCompatActivity {
         }else if(currentIsLock.equalsIgnoreCase(Constans.NULL)){
             showUINoPasswords();
         }
-
         initToolBar();
-
     }
 
     private void initToolBar() {

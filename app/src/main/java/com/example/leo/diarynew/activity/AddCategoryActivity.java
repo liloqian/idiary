@@ -76,7 +76,7 @@ public class AddCategoryActivity extends AppCompatActivity {
                         info += (":" + category);
                     }
                     sp.putString(Constans.SP_CATEGORIES_KEY,info);
-                    TagSpinner.init();
+                    TagSpinner.init();      // re-init category when add a new category to sp
                     AddCategoryActivity.this.finish();
                 }
             }
@@ -84,7 +84,7 @@ public class AddCategoryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
+     * init toolbar and set navigationIcon
      */
     private void initToolBar() {
         toolbar.setTitle("添加新的日记分类");

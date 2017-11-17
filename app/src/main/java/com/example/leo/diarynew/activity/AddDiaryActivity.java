@@ -91,7 +91,6 @@ public class AddDiaryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
      * init toolbar , set title color , homeIcon
      */
     private void initToolBar() {
@@ -109,7 +108,6 @@ public class AddDiaryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
      * when getIntent have date , set up
      */
     private void initIntent() {
@@ -119,7 +117,6 @@ public class AddDiaryActivity extends AppCompatActivity {
     }
 
     /**
-     * Created by leo on 2017/9/26
      * init spinner, get new category
      */
     private void initSpinner() {
