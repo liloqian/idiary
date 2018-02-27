@@ -13,10 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.leo.diarynew.R;
-import com.example.leo.diarynew.activity.BaseApplication;
-import com.example.leo.diarynew.activity.CheckActivity;
 import com.example.leo.diarynew.beans.DiaryBean;
-import com.example.leo.diarynew.beans.StartUpdateDiaryEvent;
 import com.example.leo.diarynew.util.GetTimeUtil;
 import com.example.leo.diarynew.util.LitePalUtil;
 

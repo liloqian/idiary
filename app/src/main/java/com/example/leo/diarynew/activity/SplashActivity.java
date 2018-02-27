@@ -1,5 +1,6 @@
 package com.example.leo.diarynew.activity;
 
+import android.app.IntentService;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;

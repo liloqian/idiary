@@ -23,6 +23,8 @@ import com.example.leo.diarynew.ui.LineEditText;
 import com.example.leo.diarynew.util.GetTimeUtil;
 import com.example.leo.diarynew.util.ToastUtils;
 
+import org.litepal.crud.DataSupport;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -80,7 +82,6 @@ public class AddDiaryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_diary);
-
         ButterKnife.bind(this);
 
         initToolBar();
