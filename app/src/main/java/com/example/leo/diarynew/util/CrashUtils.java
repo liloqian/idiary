@@ -71,7 +71,7 @@ public class CrashUtils implements Thread.UncaughtExceptionHandler{
         crashDir = baseCache.getPath() + File.separator + "crash" + File.separator;
         File dir = new File(crashDir);
         if(!dir.exists()){
-            dir.mkdir();
+            dir.mkdirs();
         }
         //get versioncode and versionname
         try {

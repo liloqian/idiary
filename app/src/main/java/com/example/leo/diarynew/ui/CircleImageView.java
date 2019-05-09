@@ -10,6 +10,7 @@ import android.graphics.PorterDuffXfermode;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
@@ -73,7 +74,6 @@ public class CircleImageView extends ImageView{
         canvas.drawARGB(0, 0, 0, 0);
         paint.setColor(color);
         int x = bitmap.getWidth();
-
         canvas.drawCircle(x / 2, x / 2, x / 2, paint);
         paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
         canvas.drawBitmap(bitmap, rect, rect, paint);
